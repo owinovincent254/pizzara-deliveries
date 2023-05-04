@@ -1,11 +1,12 @@
 * {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   box-sizing: border-box;
 }
 
 .container {
   width: 80%;
+  margin: 0 auto;
 }
 
 a {
@@ -46,4 +47,45 @@ body {
 .nav ul li:hover {
   background-color: #EEA539;
   color: #fff;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  gap: 1em;
+}
+.hero__container h1 {
+  font-size: 4.7em;
+}
+.hero__left--orange {
+  color: #EEA539;
+}
+.hero__left__search {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  border-radius: 5px;
+  border: 1px solid grey;
+  padding-left: 1em;
+}
+.hero__left__search form {
+  width: 100%;
+  font-size: 0;
+}
+.hero__left__search input {
+  border: none;
+  outline: none;
+  padding: 2em;
+  width: 80%;
+}
+.hero__left__search button {
+  width: 20%;
+  padding: 2em 0;
+}
+.hero__left, .hero__right {
+  flex: 1;
+  gap: 2em;
 }
