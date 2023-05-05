@@ -4,10 +4,10 @@
 
 &__container{
     @include flex(space-between,center);
-    gap: 1em;
+    gap: 10em;
 
 h1{
-    font-size: 4.7em;
+    font-size: 5rem;
     
 }
 }
@@ -19,7 +19,7 @@ color: $orange;
     &__search{
         @include flex(flex-start,center);
         border-radius:5px;
-        border: 1px solid grey;
+        border: 1px solid $light-grey;
         padding-left: 1em;
 
         form{
@@ -35,7 +35,37 @@ color: $orange;
         button{
             width: 20%;
             padding: 2em 0;
+            background: $black;
+            color: $white;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius: 5px;
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
         }
+
+        }
+        &__stats {
+@include flex(space-between,center);
+&--grey{
+    @include flex(center,center, column);
+    background-color: $light-grey;
+    border-radius: 5px;
+    padding: 1em;
+    text-align: center;
+    margin-top: 3em;
+    p{
+        font-weight: bold;
+    }
+}
+&__img{
+    background-color: $black;
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    padding: 1em;
+    margin-bottom: 2em;
+
+}
 
         }
  
@@ -43,9 +73,11 @@ color: $orange;
 
     &__left, &__right{
         flex: 1;
-        gap:2em;
+    }
       }
-  }
+
+
+  
 
   
 

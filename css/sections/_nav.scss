@@ -15,12 +15,16 @@
             
             a{
                 color: #000;
+                padding: 1em;
+
+                &:hover{
+                    background-color: $orange;
+                    color: $white;
+                                }               
+                            }
 
             }
-            &:hover{
-background-color: $orange;
-color: $white;
-            }
+            
         }
     }
-}
+
