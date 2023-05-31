@@ -5,6 +5,7 @@
 &__container{
     @include flex(space-between,center);
     gap: 10em;
+    margin-bottom: 3em;
 
 h1{
     font-size: 5rem;
@@ -63,18 +64,19 @@ color: $orange;
     height: 60px;
     width: 60px;
     padding: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 
 }
 
         }
+        }
  
     }
 
-    &__left, &__right{
-        flex: 1;
-    }
-      }
+    // &__left, &__right{
+    //     flex: 1;
+    
+       
 
 
   

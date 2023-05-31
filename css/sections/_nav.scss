@@ -4,6 +4,7 @@
     background-color:$light-grey;
     &__container{
 @include flex(space-between,center);
+
     }
 
     ul{
@@ -12,6 +13,7 @@
         li{
             padding: 2em;
             font-size: 20px;
+            
             
             a{
                 color: #000;
@@ -25,6 +27,42 @@
 
             }
             
+        }
+        &__right{
+            &__counter{
+                border-radius: 50%;
+                height: 30px;
+                width:30px;
+                background-color: $orange;
+                @include flex(center,center);
+                position:absolute;
+                right: 20%;
+                top: 20%;
+            }
+            ul{
+                li{
+                    position: relative;
+                    &:first-child{
+                        &:hover{
+                            span:last-child{
+                                display: block;
+                            }
+                        }
+                    }
+
+                }
+            }
+            &__cart{
+                position:absolute;
+                width: 400px;
+                min-height: 300px;
+                background-color: $white;
+                right: -100%;
+                top: 100%;
+                box-shadow: -1px 1px 4px darkgray;
+                padding: 1em;
+                display: none;
+            }
         }
     }
 
